@@ -3,362 +3,97 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Chefino Gizlilik Politikası">
-  <title>Chefino — Gizlilik Politikası</title>
-
+  <meta name="description" content="Chefino destek, abonelik ve sık sorulan sorular">
+  <meta name="theme-color" content="#070a08">
+  <title>Chefino — Destek</title>
   <style>
-    :root {
-      --background: #070a08;
-      --surface: #111612;
-      --surface-2: #171d18;
-      --text: #f6f8f5;
-      --muted: #aab4ab;
-      --accent: #caff38;
-      --border: rgba(255,255,255,.10);
-      --max-width: 900px;
-    }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      color: var(--text);
-      background:
-        radial-gradient(circle at 15% 0%, rgba(202,255,56,.12), transparent 30%),
-        var(--background);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.7;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover { text-decoration: underline; }
-
-    header {
-      padding: 72px 20px 45px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    header div,
-    main,
-    footer div {
-      width: min(100%, var(--max-width));
-      margin: auto;
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 22px;
-      font-weight: 900;
-      letter-spacing: 3px;
-    }
-
-    .brand-dot {
-      width: 11px;
-      height: 11px;
-      border-radius: 50%;
-      background: var(--accent);
-      box-shadow: 0 0 22px rgba(202,255,56,.55);
-    }
-
-    h1 {
-      margin: 0;
-      max-width: 720px;
-      font-size: clamp(38px, 7vw, 68px);
-      line-height: 1.05;
-      letter-spacing: -2px;
-    }
-
-    .subtitle {
-      margin-top: 20px;
-      max-width: 680px;
-      color: var(--muted);
-      font-size: 18px;
-    }
-
-    .updated {
-      display: inline-block;
-      margin-top: 22px;
-      padding: 8px 13px;
-      color: var(--accent);
-      background: rgba(202,255,56,.08);
-      border: 1px solid rgba(202,255,56,.20);
-      border-radius: 999px;
-      font-size: 14px;
-      font-weight: 700;
-    }
-
-    main {
-      padding: 45px 20px 70px;
-    }
-
-    section {
-      margin-bottom: 18px;
-      padding: 26px;
-      background: rgba(17,22,18,.90);
-      border: 1px solid var(--border);
-      border-radius: 22px;
-    }
-
-    h2 {
-      margin: 0 0 13px;
-      font-size: 22px;
-    }
-
-    p { margin: 0 0 13px; }
-
-    p:last-child { margin-bottom: 0; }
-
-    ul {
-      margin: 10px 0 0;
-      padding-left: 22px;
-    }
-
-    li { margin-bottom: 9px; }
-
-    .highlight {
-      color: var(--accent);
-      font-weight: 800;
-    }
-
-    footer {
-      padding: 30px 20px;
-      color: var(--muted);
-      border-top: 1px solid var(--border);
-    }
-
-    @media (max-width: 600px) {
-      header { padding-top: 48px; }
-      section { padding: 21px; }
-    }
+    :root{--bg:#070a08;--surface:#111612;--surface2:#171d18;--text:#f6f8f5;--muted:#aab4ab;--accent:#caff38;--border:rgba(255,255,255,.10);--max:900px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);background:radial-gradient(circle at 15% 0%,rgba(202,255,56,.13),transparent 30%),var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.7}
+    a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+    header{padding:72px 20px 48px;border-bottom:1px solid var(--border)}header>div,main,footer>div{width:min(100%,var(--max));margin:auto}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:34px}.brand{display:inline-flex;align-items:center;gap:10px;font-weight:900;letter-spacing:3px}.dot{width:11px;height:11px;border-radius:50%;background:var(--accent);box-shadow:0 0 22px rgba(202,255,56,.55)}
+    .nav-link{color:var(--muted);font-weight:700}h1{margin:0;max-width:720px;font-size:clamp(42px,7vw,72px);line-height:1.03;letter-spacing:-2px}.lead{max-width:690px;margin:20px 0 0;color:var(--muted);font-size:18px}
+    .cta{display:inline-flex;align-items:center;justify-content:center;margin-top:26px;padding:14px 20px;border-radius:14px;background:var(--accent);color:#0b0e0b;font-weight:900}.cta:hover{text-decoration:none;filter:brightness(.94)}
+    main{padding:46px 20px 70px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.card{padding:25px;background:rgba(17,22,18,.92);border:1px solid var(--border);border-radius:22px}.card.wide{grid-column:1/-1}
+    h2{margin:0 0 12px;font-size:22px}p{margin:0 0 12px}p:last-child{margin-bottom:0}ol,ul{margin:10px 0 0;padding-left:22px}li{margin-bottom:8px}.tag{display:inline-block;margin-bottom:13px;padding:5px 10px;border-radius:999px;color:var(--accent);background:rgba(202,255,56,.08);font-size:13px;font-weight:800}
+    footer{padding:30px 20px;color:var(--muted);border-top:1px solid var(--border)}
+    @media(max-width:680px){header{padding-top:46px}.grid{grid-template-columns:1fr}.card.wide{grid-column:auto}nav{align-items:flex-start;flex-direction:column}}
   </style>
 </head>
-
 <body>
   <header>
     <div>
-      <div class="brand">
-        CHEFINO <span class="brand-dot" aria-hidden="true"></span>
-      </div>
-
-      <h1>Gizlilik Politikası</h1>
-
-      <p class="subtitle">
-        Chefino, kişisel verilerinizi ve uygulama içindeki tercihlerinizi
-        korumaya önem verir. Bu sayfa hangi bilgilerin işlendiğini ve
-        bu bilgilerin nasıl kullanıldığını açıklar.
-      </p>
-
-      <span class="updated">Son güncelleme: 26 Ağustos 2026</span>
+      <nav>
+        <div class="brand">CHEFINO <span class="dot" aria-hidden="true"></span></div>
+        <a class="nav-link" href="privacy.html">Gizlilik Politikası</a>
+      </nav>
+      <h1>Nasıl yardımcı olabiliriz?</h1>
+      <p class="lead">Chefino kullanımı, abonelikler, satın alımları geri yükleme ve uygulama ayarları hakkında hızlı yardım alın.</p>
+      <a class="cta" href="mailto:ultrest12@gmail.com?subject=Chefino%20Destek">Destek ekibine yaz</a>
     </div>
   </header>
 
   <main>
-    <section>
-      <h2>1. Genel bilgiler</h2>
-      <p>
-        Bu Gizlilik Politikası, Chefino mobil uygulaması için geçerlidir.
-        Chefino; tarif keşfetme, yemek planlama, alışveriş listesi oluşturma,
-        besin değerlerini takip etme ve abonelik özellikleri sunar.
-      </p>
-      <p>
-        Uygulama kullanılarak bu politikada açıklanan veri uygulamalarının
-        okunduğu kabul edilir.
-      </p>
-    </section>
+    <div class="grid">
+      <section class="card">
+        <span class="tag">ABONELİK</span>
+        <h2>Chefino+ görünmüyor mu?</h2>
+        <ol>
+          <li>İnternet bağlantınızı kontrol edin.</li>
+          <li>App Store’da satın alırken kullandığınız Apple hesabıyla giriş yaptığınızdan emin olun.</li>
+          <li>Chefino’daki abonelik ekranından <strong>Satın Alımları Geri Yükle</strong> seçeneğine dokunun.</li>
+          <li>Uygulamayı tamamen kapatıp yeniden açın.</li>
+        </ol>
+      </section>
 
-    <section>
-      <h2>2. Cihazınızda saklanan bilgiler</h2>
-      <p>
-        Aşağıdaki bilgiler yalnızca cihazınızda yerel olarak saklanabilir:
-      </p>
+      <section class="card">
+        <span class="tag">İPTAL VE YENİLEME</span>
+        <h2>Aboneliğimi nasıl yönetirim?</h2>
+        <p>Abonelik ücretleri Apple tarafından işlenir. İptal etmek veya planı değiştirmek için:</p>
+        <p><strong>Ayarlar → Apple Hesabı → Abonelikler → Chefino</strong></p>
+        <p>Aboneliği silmek, mevcut ücretli dönemi hemen sonlandırmaz; erişim dönem sonuna kadar devam eder.</p>
+      </section>
 
-      <ul>
-        <li>Favori tarifleriniz ve uygulama tercihleriniz</li>
-        <li>Seçtiğiniz uygulama dili ve görünüm teması</li>
-        <li>Günlük yemek planınız ve alışveriş listeniz</li>
-        <li>Beslenme hedefleriniz ve planlama tercihleriniz</li>
-        <li>Tariflere eklediğiniz puanlar, notlar ve fotoğraflar</li>
-        <li>Uygulama başlangıç ve tanıtım ekranı tercihleriniz</li>
-      </ul>
+      <section class="card">
+        <span class="tag">ÇEVRİMDIŞI KULLANIM</span>
+        <h2>İnternet olmadan kullanabilir miyim?</h2>
+        <p>Daha önce doğrulanmış abonelik durumu ve cihazda bulunan içerikler kısa süre çevrimdışı çalışabilir. Satın alma, geri yükleme ve abonelik doğrulaması için internet bağlantısı gerekir.</p>
+      </section>
 
-      <p>
-        Bu içerikler Chefino geliştiricisinin sunucularına gönderilmez.
-        Uygulamayı silmeniz hâlinde cihazda saklanan bu bilgiler de
-        işletim sisteminin kurallarına göre silinebilir.
-      </p>
-    </section>
+      <section class="card">
+        <span class="tag">DİL VE AYARLAR</span>
+        <h2>Uygulama dilini nasıl değiştiririm?</h2>
+        <p>Chefino içinden <strong>Ayarlar → Dil</strong> bölümüne gidip istediğiniz dili ve ülke bayrağını seçin. Bazı sistem ekranları cihazınızın diline göre gösterilebilir.</p>
+      </section>
 
-    <section>
-      <h2>3. Abonelik ve satın alma bilgileri</h2>
-      <p>
-        Chefino+, Apple App Store üzerinden sunulan otomatik yenilenen
-        abonelikler içerebilir. Ödemeler Apple tarafından işlenir.
-        Chefino geliştiricisi kredi kartı veya banka kartı bilgilerinizi
-        görmez ve saklamaz.
-      </p>
+      <section class="card">
+        <span class="tag">VERİLER</span>
+        <h2>Favorilerim ve planlarım nerede saklanıyor?</h2>
+        <p>Favoriler, planlar, notlar, seçtiğiniz fotoğraflar ve uygulama tercihleri cihazınızda saklanır. Uygulamayı silmek bu yerel verilerin kaybolmasına neden olabilir.</p>
+      </section>
 
-      <p>
-        Abonelik durumunun doğrulanması, satın alımların geri yüklenmesi,
-        dolandırıcılığın önlenmesi ve premium özelliklerin açılması için
-        <span class="highlight">RevenueCat</span> hizmeti kullanılmaktadır.
-      </p>
+      <section class="card">
+        <span class="tag">SORUN GİDERME</span>
+        <h2>Uygulama beklenmedik davranıyor mu?</h2>
+        <ul>
+          <li>Chefino’yu kapatıp yeniden açın.</li>
+          <li>App Store’dan en güncel sürümü yükleyin.</li>
+          <li>Cihazınızı yeniden başlatın.</li>
+          <li>Sorun devam ederse cihaz modeli, iOS sürümü ve sorunu anlatan kısa bilgiyle bize yazın.</li>
+        </ul>
+      </section>
 
-      <p>RevenueCat aracılığıyla aşağıdaki bilgiler işlenebilir:</p>
-
-      <ul>
-        <li>Anonim uygulama kullanıcı kimliği</li>
-        <li>Satın alma ve abonelik geçmişi</li>
-        <li>Ürün kimliği, abonelik durumu ve sona erme bilgisi</li>
-        <li>Uygulama sürümü, platform, ülke/bölge ve para birimi bilgileri</li>
-      </ul>
-
-      <p>
-        Bu bilgiler abonelik özelliklerinin çalışması, satın almaların
-        doğrulanması, analiz edilmesi ve dolandırıcılığın önlenmesi amacıyla
-        kullanılabilir. Reklam amacıyla kullanıcı takibi yapılmaz.
-      </p>
-    </section>
-
-    <section>
-      <h2>4. Fotoğraflar ve kullanıcı içerikleri</h2>
-      <p>
-        Chefino, bir tarifi denediğinizi kaydederken isteğe bağlı olarak
-        cihazınızdan fotoğraf seçmenize izin verebilir.
-      </p>
-      <p>
-        Seçtiğiniz fotoğraflar ve yazdığınız tarif notları cihazınızda
-        saklanır. Bu içerikler Chefino geliştiricisinin sunucularına
-        yüklenmez veya üçüncü kişilere gönderilmez.
-      </p>
-    </section>
-
-    <section>
-      <h2>5. Destek talepleri</h2>
-      <p>
-        Destek amacıyla bizimle e-posta üzerinden iletişim kurarsanız,
-        gönderdiğiniz e-posta adresi, mesaj içeriği ve isteğe bağlı ekler
-        sorununuzu çözmek amacıyla işlenebilir.
-      </p>
-      <p>
-        Destek mesajları, talebin sonuçlandırılması ve yasal yükümlülüklerin
-        yerine getirilmesi için gerekli olduğu süre boyunca saklanabilir.
-      </p>
-    </section>
-
-    <section>
-      <h2>6. Toplamadığımız bilgiler</h2>
-      <p>Chefino şu anda:</p>
-
-      <ul>
-        <li>Üçüncü taraf reklam göstermez</li>
-        <li>Kullanıcıları uygulamalar veya internet siteleri arasında izlemez</li>
-        <li>Konum, kişi listesi veya mikrofon verisi toplamaz</li>
-        <li>Sağlık uygulaması ya da HealthKit verilerine erişmez</li>
-        <li>Kişisel verileri satmaz veya veri aracılarından veri satın almaz</li>
-        <li>Kullanıcı hesabı oluşturmayı zorunlu tutmaz</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>7. Üçüncü taraf hizmetleri</h2>
-      <p>
-        Chefino’nun kullandığı hizmetler kendi gizlilik politikalarına göre
-        veri işleyebilir:
-      </p>
-
-      <ul>
-        <li>
-          <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">
-            Apple Gizlilik Politikası
-          </a>
-        </li>
-        <li>
-          <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener">
-            RevenueCat Gizlilik Politikası
-          </a>
-        </li>
-      </ul>
-
-      <p>
-        Kullandığımız üçüncü taraflardan, verileri yürürlükteki kurallara
-        ve bu politikada belirtilen koruma seviyesine uygun şekilde
-        işlemelerini bekleriz.
-      </p>
-    </section>
-
-    <section>
-      <h2>8. Saklama ve silme</h2>
-      <ul>
-        <li>
-          Yerel uygulama verileri, uygulama veya ilgili kayıt kullanıcı
-          tarafından silinene kadar cihazda tutulabilir.
-        </li>
-        <li>
-          Satın alma kayıtları Apple ve RevenueCat tarafından kendi yasal
-          yükümlülükleri ve saklama politikaları kapsamında tutulabilir.
-        </li>
-        <li>
-          Destek mesajları yalnızca destek ve yasal gereklilikler için
-          ihtiyaç duyulan süre boyunca saklanır.
-        </li>
-      </ul>
-
-      <p>
-        Verilerinizle ilgili erişim veya silme talebinde bulunmak için
-        aşağıdaki iletişim adresini kullanabilirsiniz.
-      </p>
-    </section>
-
-    <section>
-      <h2>9. Çocukların gizliliği</h2>
-      <p>
-        Chefino bilerek 13 yaşından küçük çocuklardan kişisel veri toplamaz.
-        Böyle bir verinin işlendiğini düşünüyorsanız bizimle iletişime geçin.
-      </p>
-    </section>
-
-    <section>
-      <h2>10. Güvenlik</h2>
-      <p>
-        Bilgileri yetkisiz erişim, kayıp veya kötüye kullanıma karşı korumak
-        için makul teknik ve idari önlemler uygulanır. Bununla birlikte hiçbir
-        elektronik saklama veya aktarım yönteminin tamamen risksiz olmadığı
-        unutulmamalıdır.
-      </p>
-    </section>
-
-    <section>
-      <h2>11. Politika değişiklikleri</h2>
-      <p>
-        Bu politika; uygulamanın özellikleri, kullanılan hizmetler veya yasal
-        gereklilikler değiştiğinde güncellenebilir. Güncel sürüm bu sayfada
-        yeni tarih bilgisiyle yayımlanır.
-      </p>
-    </section>
-
-    <section>
-      <h2>12. İletişim</h2>
-      <p>
-        Gizlilik soruları, veri talepleri veya silme istekleri için:
-      </p>
-      <p>
-        <a href="mailto:support@example.com">support@example.com</a>
-      </p>
-    </section>
+      <section class="card wide">
+        <span class="tag">İLETİŞİM</span>
+        <h2>Bize ulaşın</h2>
+        <p>Yanıt verebilmemiz için sorunu, kullandığınız cihazı ve iOS sürümünü belirtin. Şifre, ödeme kartı bilgisi veya başka hassas bilgiler göndermeyin.</p>
+        <p><a href="mailto:ultrest12@gmail.com?subject=Chefino%20Destek">ultrest12@gmail.com</a></p>
+      </section>
+    </div>
   </main>
 
   <footer>
-    <div>
-      © 2026 Chefino / Deer Games and Apps. Tüm hakları saklıdır.
-    </div>
+    <div>© 2026 Chefino / Deer Games and Apps. Tüm hakları saklıdır.</div>
   </footer>
 </body>
 </html>
