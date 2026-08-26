@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chefino destek ve gizlilik bilgileri">
+  <meta name="theme-color" content="#070a08">
+  <title>Chefino</title>
+  <style>
+    :root{--bg:#070a08;--surface:#111612;--text:#f6f8f5;--muted:#aab4ab;--accent:#caff38;--border:rgba(255,255,255,.10)}
+    *{box-sizing:border-box}body{min-height:100vh;margin:0;display:grid;place-items:center;padding:24px;color:var(--text);background:radial-gradient(circle at 20% 0%,rgba(202,255,56,.15),transparent 34%),var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    main{width:min(100%,720px);padding:clamp(28px,6vw,58px);border:1px solid var(--border);border-radius:30px;background:rgba(17,22,18,.92);box-shadow:0 30px 90px rgba(0,0,0,.35)}
+    .brand{display:flex;align-items:center;gap:10px;margin-bottom:34px;font-weight:900;letter-spacing:3px}.dot{width:11px;height:11px;border-radius:50%;background:var(--accent);box-shadow:0 0 22px rgba(202,255,56,.55)}
+    h1{margin:0;font-size:clamp(40px,8vw,72px);line-height:1.02;letter-spacing:-2px}p{margin:20px 0 30px;color:var(--muted);font-size:18px;line-height:1.7}
+    .links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}a{display:block;padding:18px 20px;border-radius:16px;font-weight:850;text-decoration:none;text-align:center}
+    .primary{background:var(--accent);color:#0b0e0b}.secondary{color:var(--text);border:1px solid var(--border);background:rgba(255,255,255,.035)}a:hover{filter:brightness(.95)}
+    @media(max-width:560px){.links{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="brand">CHEFINO <span class="dot" aria-hidden="true"></span></div>
+    <h1>Bugün ne yesem?</h1>
+    <p>Chefino destek merkezine hoş geldiniz. Yardım alın veya verilerinizin nasıl korunduğunu inceleyin.</p>
+    <div class="links">
+      <a class="primary" href="support.html">Destek</a>
+      <a class="secondary" href="privacy.html">Gizlilik Politikası</a>
+    </div>
+  </main>
+</body>
+</html>
